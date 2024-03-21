@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    """Compute the square value of all integers of a matr."""
-    return ([list(map(lambda x: x * x, row)) for row in matrix])
+    squared_matrix = list(map(lambda row: list(map(lambda x: x ** 2, row)), matrix))
+    return squared_matrix
